@@ -23,7 +23,7 @@
   },
   "autoload": {
     "psr-4": {
-      "strelov1\\": ""
+      "strelov1\\add": ""
     }
   }
 }

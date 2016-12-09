@@ -1,6 +1,6 @@
 <?php
 
-namespace add\generators;
+namespace strelov1\add\generators;
 
 use yii\gii\CodeFile;
 use Yii;

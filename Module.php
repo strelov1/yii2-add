@@ -1,6 +1,6 @@
 <?php
 
-namespace add;
+namespace strelov1\add;
 
 use yii\base\BootstrapInterface;
 use yii\base\Module as BaseModule;
