@@ -120,7 +120,7 @@ class Module extends BaseModule implements BootstrapInterface
     protected function coreGenerators()
     {
         return [
-            'module' => ['class' => 'add\generators\Generator'],
+            'module' => ['class' => 'strelov1\add\generators\Generator'],
         ];
     }
 
