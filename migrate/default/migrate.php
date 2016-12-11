@@ -1,7 +1,6 @@
 <?php
 
 echo "<?php\n";
-echo "\nnamespace {$generator->moduleId}\migrate;\n";
 ?>
 
 use yii\db\Migration;

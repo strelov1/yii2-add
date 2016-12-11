@@ -76,7 +76,7 @@ class Generator extends \yii\gii\Generator
 
     public function getMigrateName()
     {
-        return 'M' . gmdate('ymdHis') . $this->getLowName();
+        return 'm' . gmdate('ymd_His') . '_' . $this->getLowName();
     }
 
     public function getProperty()
