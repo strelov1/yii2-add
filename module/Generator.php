@@ -76,11 +76,11 @@ class Generator extends \yii\gii\Generator
             $this->render("controller.php")
         );
         $files[] = new CodeFile(
-            $this->getLowName() . '/model/'. $this->getUpperName() .'.php',
+            $this->getLowName() . '/models/'. $this->getUpperName() .'.php',
             $this->render("model.php")
         );
         $files[] = new CodeFile(
-            $this->getLowName() . '/views/layout/base.twig',
+            $this->getLowName() . '/views/layouts/base.twig',
             $this->render("layout.php")
         );
         $files[] = new CodeFile(
@@ -114,6 +114,6 @@ class Generator extends \yii\gii\Generator
      */
     public function getModelNamespace()
     {
-        return $this->getLowName() . '\model';
+        return $this->getLowName() . '\models';
     }
 }
