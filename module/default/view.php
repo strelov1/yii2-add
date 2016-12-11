@@ -1,7 +1,7 @@
 <?php
 /* @var $generator yii\gii\generators\module\Generator */
 ?>
-{% extends "@blog/views/layouts/base.twig" %}
+{% extends "@<?= $generator->name; ?>/views/layouts/base.twig" %}
 
 {% block content %}
 <div class="<?= $generator->name . '-default-index' ?>">

@@ -76,6 +76,10 @@ class Generator extends \yii\gii\Generator
             $this->render("controller.php")
         );
         $files[] = new CodeFile(
+            $this->getLowName() . '/model/'. $this->getUpperName() .'.php',
+            $this->render("model.php")
+        );
+        $files[] = new CodeFile(
             $this->getLowName() . '/views/layout/base.twig',
             $this->render("layout.php")
         );
@@ -103,5 +107,13 @@ class Generator extends \yii\gii\Generator
     public function getControllerNamespace()
     {
         return $this->getLowName() . '\controllers';
+    }
+
+    /**
+     * @return string the controller namespace of the module.
+     */
+    public function getModelNamespace()
+    {
+        return $this->getLowName() . '\model';
     }
 }

@@ -1,19 +1,18 @@
 <?php
 
 /* @var $this yii\web\View */
-/* @var $generator add\generators\Generator */
+/* @var $generator add\module\Generator */
 
-$className = ucfirst($generator->name);
 
 echo "<?php\n";
 ?>
 
-namespace <?= $generator->name ?>;
+namespace <?= $generator->getLowName() ?>;
 
 /**
- * <?= $generator->name ?> module definition class
+ * <?= $generator->getLowName() ?> module definition class
  */
-class <?= $className ?> extends \yii\base\Module
+class Module extends \yii\base\Module
 {
     /**
      * @inheritdoc
