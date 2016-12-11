@@ -10,9 +10,9 @@ echo "<?php\n";
 namespace <?= $generator->getLowName() ?>;
 
 /**
- * <?= $generator->getLowName() ?> module definition class
+ * <?= $generator->getLowName() ?>Module module definition class
  */
-class Module extends \yii\base\Module
+class <?= $generator->getUpperName() ?>Module extends \yii\base\Module
 {
     /**
      * @inheritdoc

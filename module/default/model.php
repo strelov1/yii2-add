@@ -17,29 +17,28 @@ use Yii;
 */
 class <?= $generator->getUpperName() ?> extends \yii\db\ActiveRecord<?= "\n" ?>
 {
-/**
-* @inheritdoc
-*/
-public static function tableName()
-{
-return '<?= $generator->getLowName() ?>';
-}
+    /**
+    * @inheritdoc
+    */
+    public static function tableName()
+    {
+        return '<?= $generator->getLowName() ?>';
+    }
 
-/**
-* @inheritdoc
-*/
-public function rules()
-{
-return [
-];
-}
+    /**
+    * @inheritdoc
+    */
+    public function rules()
+    {
+        return [];
+    }
 
-/**
-* @inheritdoc
-*/
-public function attributeLabels()
-{
-return [];
-}
+    /**
+    * @inheritdoc
+    */
+    public function attributeLabels()
+    {
+        return [];
+    }
 
 }

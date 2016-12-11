@@ -64,7 +64,7 @@ class Generator extends \yii\gii\Generator
     {
         $files = [];
         $files[] = new CodeFile(
-            $this->getLowName() . '\\' . $this->getUpperName() . '.php',
+            $this->getLowName() . '\\' . $this->getUpperName() . 'Module.php',
             $this->render("module.php")
         );
         $files[] = new CodeFile(
